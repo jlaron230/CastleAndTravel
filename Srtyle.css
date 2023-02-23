@@ -1,0 +1,370 @@
+/**
+ * style.css - Style principal de la page
+ */
+
+/*Classe Générique
+*/
+body{
+    color: white;
+    font-family: "Poppins" ;
+    margin-top: 0em;
+}
+li, a{
+    list-style: none;
+    font-family: "Poppins" ;
+}
+
+ul{
+     justify-content: space-evenly;
+     display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration-line: none;
+    transition: all 0.25s;
+}
+
+a:hover{
+    color: #ecd537;
+    font-size: 18px;
+}
+
+i{
+ color: #eadd39;
+}
+
+figcaption{
+    display: none;
+}
+
+p{
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h1 i{
+    font-size: 14px;
+}
+
+
+/**
+ * Polices
+ */
+
+/* Moon Dance */
+@font-face {
+  font-family: "Moon Dance";
+  src: url("assets/fonts/Moon_Dance/MoonDance-Regular.ttf");
+}
+
+/* Poppins */
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+
+/* A FAIRE: Implémenter le style de la page selon la maquette */
+
+/**/
+/*Classes container*/
+/**/
+
+.Container {
+    width: 90%;
+    margin-left: auto;
+     margin-right: auto;
+}
+
+.ContainerImg {
+    width: 96%;
+    margin-left: auto;
+     margin-right: auto;
+}
+
+.ContainerFooter {
+    margin-left: auto;
+     margin-right: auto;
+    display: block;
+}
+
+.ContainerPosition{
+    justify-content: center;
+     text-align: center;
+}
+
+/**/
+/*Classes du menu*/
+/**/
+
+.Menu img {
+    width: 125px;
+    vertical-align: middle; 
+}
+
+#Logo{
+    width: 100%;
+    line-height: 55px;
+    padding-left: 10px;  
+}
+
+
+#LogoCentre{
+    justify-content: left;
+}
+
+.Menu
+{
+    background-color: #1f1f1f;
+    border-top: 0.3rem solid #eadd39;
+    text-align: center;      
+}
+
+.TexteCentre{
+    justify-content: space-between;
+    align-items: center; 
+}
+
+/**/
+/*Classes du Header*/
+/**/
+
+#BackgroundCov {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url(assets/images/altenstein-castle.jpg);
+    background-position: center;
+  
+}
+
+#TitrePrincipal{
+    font-family: "Moon Dance";
+    font-size: 80px;
+    margin-bottom: 0.3em;
+    margin-top: -0.3em;
+}
+
+.TtreButton {
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+     font-family: "Poppins" ;
+     font-weight: bold;
+}
+
+#iconSize{
+ font-size: 12px; 
+}
+
+/**/
+/*Bouton et survol*/
+/**/
+.BtnDecouvrir{
+  background-color: #ecd537;
+  border-radius: 7px;
+    border: white;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px;
+  width: 125px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+font-family: "Poppins" ;
+ font-weight: bold;
+ margin: -2em;
+}
+
+.BtnDecouvrir:hover
+{
+    background-color: #1f1f1f;
+}
+
+/**/
+/*Classes du main*/
+/**/
+
+#CouvertureFond{
+  background-color: #1f1f1f;
+}
+
+.Concept{
+    display: flex;
+    justify-content: center;
+     width: 25%;
+}
+
+.H1titre{
+      display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ListeConcept{
+    background-color : white;
+    color : black;
+    font-size : 14px;
+    margin : 1em;
+    padding : 0.5em;
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+#IconeEffect{
+    font-size: 45px;
+    color: black;
+    padding: 0.5em;
+}
+
+/**/
+/*Classes du footer*/
+/**/
+#IconeEffectFooter{
+    font-size: 45px;
+    color: white;
+    margin: 0.3em;
+    margin-right: 0.7em;
+}
+
+.AlignementTexteFooter{
+    display: flex;
+    align-items: center;
+}
+
+
+/*Media querries*/
+@media screen and (min-width : 768px){
+ #LogoCentre{
+  width: 50%;
+}   
+    .TexteCentre{
+    width: 75%;
+    display: flex;
+}
+    .Menu{
+    display: flex;
+}
+    
+   .TtreButton {
+       height: 800px; 
+    }
+     #BackgroundCov {
+      background-size: cover;
+    }
+    .H1titre{
+     width: 60%;  
+    }
+    
+    .ContainerPosition{
+    display: flex;
+    }
+     figure img{
+        height: 200px;
+        padding: 0.75em;
+    }
+    
+    .ContainerFooter {
+    width: 85%;
+    }
+    
+      #BackgroundCov {
+    height: 900px;
+    }
+    
+}
+
+@media screen and (min-width : 1024px){
+    .TexteCentre{
+    width: 75%;
+}
+  #LogoCentre{
+  width: 100%;
+  justify-content: left;
+}   
+  .H1titre{
+     width: 35%;  
+    }
+    
+   .TtreButton {
+       height: 430px; 
+    }
+    #BackgroundCov {
+    height: 550px;
+    }
+    
+    .ContainerFooter {
+    width: 50%;
+    }
+    
+}
+
+@media screen and (min-width : 1300px){
+     .TexteCentre{
+    width: 50%;
+}   
+}
+
+@media screen and (max-width : 767px){
+   .Menu{
+    display: block;
+} 
+    .TexteCentre{
+    display: block;
+    padding-bottom: 1em;
+     margin-top: -1em;
+}
+    #LogoCentre{
+  justify-content: center;
+}   
+    .TtreButton {
+       height: 275px; 
+    }
+    #BackgroundCov {
+      background-size: auto;
+    }
+    .H1titre{
+     width: 70%;  
+    }
+    .ContainerPosition{
+    display: block;
+    }
+    figure img{
+        width: 100%;
+    }
+    .ContainerFooter {
+    width: 100%;
+    }
+    
+    #BackgroundCov {
+    height: 650px;
+    }
+}
+
+
